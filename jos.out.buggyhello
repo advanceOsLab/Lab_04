@@ -1,0 +1,34 @@
++ ld obj/kern/kernel
++ mk obj/kern/kernel.img
+6828 decimal is XXX octal!
+Physical memory: 64M available, base = 640K, extended = 63M
+ we are at the end of check_page_free_list 
+check_page_alloc(void) succedeed 
+check_page() succeeded!
+check_kern_pgdir() succeeded!
+ we are at the end of check_page_free_list 
+check_page_installed_pgdir() succeeded!
+
+
+env_creat() is creating an environment to run binary of address :    f0122b56
+[00000000] new env 00001000
+ ELFHDR->e_entry = 800020 
+ env_run   :    f01a0000
+Incoming TRAP frame at 0xefffffbc and trap_num System call
+ the kernel syscall() has been invoked to handle a systemcall number : 2 
+env_run   :    f01a0000
+Incoming TRAP frame at 0xefffffbc and trap_num System call
+ the kernel syscall() has been invoked to handle a systemcall number : 0 
+ the address passed for a check is eebfdea8 
+ binaryname = 3c  ,  argc = 0 
+
+  env_run   :    f01a0000
+Incoming TRAP frame at 0xefffffbc and trap_num System call
+ the kernel syscall() has been invoked to handle a systemcall number : 0 
+ the address passed for a check is 1 
+[00001000] user_mem_check assertion failure for va 00000000
+[00001000] free env 00001000
+Destroyed the only environment - nothing more to do!
+Welcome to the JOS kernel monitor!
+Type 'help' for a list of commands.
+qemu: terminating on signal 15 from pid 9806
